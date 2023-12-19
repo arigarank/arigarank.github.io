@@ -33,17 +33,21 @@
     font-weight: 200;
     padding: 10px;
     margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
     text-decoration: none;
     color: gray;
 
 }
 .services{
-    margin: 10px 30px 5px;
+    margin: 10px 40px 5px;
 }
 .services ul{
     display: flex;
     list-style: none;
+}
+.services a:hover{
+    color: #0ea2bd;
+    border-bottom: 3px solid #0ea2bd;
 }
 
 .services a{
@@ -60,12 +64,13 @@
     background-color: #0ea2bd;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 .head-btn a:hover{
     background-color: #fff;
     color: #0ea2bd;
     border: 1px solid #0ea2bd;
+    cursor: pointer;
 }
 .home-page{
     background-image: url(hero-bg.png);
@@ -74,17 +79,17 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    margin-bottom:50px;
+    margin-bottom: 50px;
     
 }
 .home-img img{
     width: 500px;
     position: relative;
-    left: 450px;
+    left: 500px;
     top: 60px;
-    animation-name: updown;
-    animation-duration: 4.5s;
-    animation-iteration-count: infinite;
+    /* animation-name: updown;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
 }
 .home-contant{
     position: relative;
@@ -96,6 +101,10 @@
     font-size: 48px;
     font-weight: 100;
     color: rgb(90, 90, 90);
+}
+.home-contant h2::after{
+    content: "HeroBiz";
+    color: #45b6ca;
 }
 .home-contant p{
     font-size: 20px;
@@ -125,6 +134,7 @@
     background-color: #fff;
     color: #0ea2bd;
     border: 1px solid #0ea2bd;
+    cursor: pointer;
 }
 .video-btn{
     text-decoration: none;
@@ -145,7 +155,7 @@
     color: #0ea2bd;
 
 }
-#container{
+#about{
     display: flex;
     padding: 10px 0px ;
     width: 100%;
@@ -180,7 +190,8 @@
     color: var(--bgcolor);
 }
 .container-text h2{
-    margin-top: 5px;
+    margin-top: 10px;
+    line-height: 30px;
     margin-bottom: 15px;
 }
 .container-text ul{
@@ -196,6 +207,9 @@
     width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .play-btn i{
@@ -203,28 +217,26 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    position: relative;
     color: #ffffff;
     width: 50px;
     height: 50px;
-    left: 45%;
     background-color: #45b6ca;
-    top: 50%;
     border-radius: 35px;
     box-shadow: 0px 0px 0px 16px rgba(38, 170, 194, 0.5);
     /* outline: 5px solid red; */
     /* outline-offset: 15px; */
     transition: 1s;
-    animation-name: example;
+    /* animation-name: example;
     animation-duration: 1.3s;
 
     /* Animation will be repeated infinitely */
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite;  */
 }
-/* .summa:hover i{
-    outline: 5px solid red;
-    outline-offset: 15px;
-} */
+.play-btn i:hover{
+    padding: 10px;
+    cursor: pointer;
+}
+
 .service-container{
     text-align: center;
     margin-top: 20px;
@@ -268,11 +280,24 @@
     width: 370px;
     height: 300px;
 }
+.service-container .box:hover .icon-1{
+    color: #0ea2bd;
+    background-color: #fff;
+    border-color: #fff;
+    outline-color: #0ea2bd;
+}
+.service-container .box:hover .icon-1 svg{
+    fill: #0ea2bd;
+    background-color: #fff;
+}
+
+
 .box{
     width: 350px;
     height: 250px;
     background-size: cover;
     border-radius: 10px;
+    
    
 }
 .service-1{
@@ -339,7 +364,10 @@
     background-color: #0ea2bd;
     border-radius: 35px;
     border: 4px solid #fff;
+    outline: 3px solid #fff;
+    transition: .4s;
 }
+
 .about-1 h2{
     margin:15px 10px;
     font-size: 21px;
@@ -440,6 +468,8 @@
 }
 .address{
     width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .address h2{
     font-size: 28px;
@@ -466,15 +496,19 @@
     color: rgb(182, 182, 182);
     font-size: 15px;
 }
+.links a:hover{
+    color: #fff;
+    cursor: pointer;
+}
 .links li{
-    margin-top: 17px;
+    margin-top: 20px;
     margin-left: 20px;
 }
 .links h3{
     color: #dbdbdb;
 }
 .newsletter{
-    width: 420px;
+    width: 470px;
     color: #fff ;   
 }
 .newsletter p{
@@ -486,7 +520,7 @@
     font-size: 16px;
 }
 .newsletter input{
-    padding: 12px 50px 12px 10px;
+    padding: 12px 30px 12px 10px;
     font-size: 18px;
     border-radius: 6px;
     border-top-right-radius: 0px;
@@ -560,7 +594,7 @@
 
 
 
-@keyframes example {
+/* @keyframes example {
     from {
         outline: 2px solid  #4bcae0;
         outline-offset: 0px;
@@ -582,4 +616,4 @@
       0%{
         top: 60px;
       }
-    }
+    } */
