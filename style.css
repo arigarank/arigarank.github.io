@@ -711,8 +711,8 @@
         .header h1 a{
             font-size: 32px;
             padding-top: 0px;
-            margin-left:5px;
-            margin-right:22px;
+            margin-left: 0px;
+            margin-right: 25px;
         }
         .header ul{
             display: none;
