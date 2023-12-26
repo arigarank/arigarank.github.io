@@ -274,11 +274,11 @@
     /* outline: 5px solid red; */
     /* outline-offset: 15px; */
     transition: 1s;
-    /* animation-name: example;
+    animation-name: example;
     animation-duration: 1.3s;
 
     /* Animation will be repeated infinitely */
-    /* animation-iteration-count: infinite;  */
+    animation-iteration-count: infinite;
 }
 .play-btn i:hover{
     padding: 10px;
